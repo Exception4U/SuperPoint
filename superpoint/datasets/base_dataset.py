@@ -97,6 +97,7 @@ class BaseDataset(metaclass=ABCMeta):
 
     def __init__(self, **config):
         # Update config
+        # import pdb;pdb.set_trace()
         self.config = dict_update(getattr(self, 'default_config', {}), config)
 
         self.dataset = self._init_dataset(**self.config)

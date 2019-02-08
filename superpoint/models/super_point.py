@@ -85,7 +85,8 @@ class SuperPoint(BaseModel):
         tf.summary.scalar('descriptor_loss', config['lambda_loss'] * descriptor_loss)
 
         loss = (detector_loss + warped_detector_loss
-                + config['lambda_loss'] * descriptor_loss)
+                + config['lambda_loss'] * descriptor_loss) 
+                #very important loss term from the paper
         return loss
 
     def _metrics(self, outputs, inputs, **config):
