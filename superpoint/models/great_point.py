@@ -5,7 +5,7 @@ cnsciousness between two views.
 import tensorflow as tf
 from .base_model import BaseModel, Mode
 
-class GreapPoint(BaseModel):
+class GreatPoint(BaseModel):
     input_spec = {
         'image:'{'shape':[None,None,None,1], 'type': tf.float32}
         }

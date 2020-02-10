@@ -20,7 +20,8 @@ class CadModels(BaseDataset):
 	}
 
 	def _init_dataset(self, **config):
-		# base_path = Path(DATA_PATH, 'shapenet-cad-models/chair-data/10dc303144fe5d668d1b9a1d97e2846')
+		# base_path = Path(DATA_PATH, 
+		# 'shapenet-cad-models/chair-data/10dc303144fe5d668d1b9a1d97e2846')
 		base_path = Path(DATA_PATH, 'shapenet-cad-models/chair-data/')
 		# image_paths = list(base_path.iterdir())
 		image_paths = list(base_path.glob('**/*.png')) #this command will 
