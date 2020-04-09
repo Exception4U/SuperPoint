@@ -1,4 +1,5 @@
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
 
 from .base_model import BaseModel, Mode
 from .backbones.vgg import vgg_backbone

@@ -6,7 +6,8 @@ from pathlib import Path
 logging.basicConfig(format='[%(asctime)s %(levelname)s] %(message)s',
                     datefmt='%m/%d/%Y %H:%M:%S',
                     level=logging.INFO)
-import tensorflow as tf  # noqa: E402
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()  # noqa: E402
 
 from superpoint.models import get_model  # noqa: E402
 from superpoint.settings import EXPER_PATH  # noqa: E402

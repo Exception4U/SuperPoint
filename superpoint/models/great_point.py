@@ -2,7 +2,8 @@
 A more superpoint like resembline network with rotation 
 cnsciousness between two views.
 """
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
 from .base_model import BaseModel, Mode
 
 class GreatPoint(BaseModel):
